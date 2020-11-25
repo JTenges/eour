@@ -6,5 +6,13 @@
   </head>
   <body>
     <h1>Hello World!</h1>
+    <ul>
+    {% for question in site.data.questions %}
+      <li>
+        <span>{{question.question}}</span>
+        <span>{{question.answer}}</span>
+      </li>
+    {% endfor %}
+    </ul>
   </body>
 </html>
